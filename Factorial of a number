@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+ int main(){
+    int num;
+    int result=1;
+
+    printf("Enter a number: ");
+    scanf ("%d",&num);
+
+    if (num < 0){
+        printf("Negative number do not have factorial.\n");
+    
+    }
+    else{
+     for (int i = 2; i<=num; ++i){
+        result=result*i;
+    }
+     printf("The factorial of %d is %d", num,result);
+        
+    }
+    
+    return 0;
+ }
