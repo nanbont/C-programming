@@ -1,0 +1,21 @@
+// Example Guess the number game
+
+#include <stdio.h>
+int main(){
+    int number = 39, guessed_number;
+
+    while(1){
+        scanf("%d",&guessed_number);
+
+        if(guessed_number > number){
+            printf("Wrong number!! Guess smaller number.\n");
+        }else if(guessed_number < number){
+            printf("Wrong number!! Guess larger number");
+        }else{
+            printf("Congratulations!! you have won the guess game.");
+            break;
+        }
+
+    }
+    return 0;
+}
