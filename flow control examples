@@ -1,0 +1,24 @@
+//Flow control examples
+
+// Question 1: Find the greater number between two numbers
+
+#include <stdio.h>
+
+int main(){
+    int num1, num2;
+
+    printf("Enter two numbers.  ");
+    scanf("%d  %d",&num1 , &num2);
+
+    if(num1 > num2){
+        printf("%d is greater than %d",num1 ,num2);
+    }else if(num2>num1){
+        printf("%d is greater than %d",num2 ,num1);
+    }else{
+        printf("neither of &d and %d are greater than each other.",num1 , num2);
+    }
+
+        return 0;
+}
+
+
